@@ -1,4 +1,4 @@
-FROM docker.elastic.co/logstash/logstash:7.2.0
+FROM docker.elastic.co/logstash/logstash:7.3.2
 RUN /usr/share/logstash/bin/logstash-plugin install logstash-input-s3 logstash-filter-grok
 RUN /usr/share/logstash/bin/logstash-plugin update
 RUN curl http://geolite.maxmind.com/download/geoip/database/GeoLite2-City.tar.gz --output GeoLite2-City.tar.gz
